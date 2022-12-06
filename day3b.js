@@ -3,7 +3,7 @@ const input = require("fs")
     .readFileSync(0, { encoding: "utf-8" })
     .split("\n")
 
-    // TIPS: solution estde conplexite O(n^2), on aurait pu stocker les lettres de la premiere chaine puis les comparer une a une
+    // TIPS: solution de conplexite O(n^2), on aurait pu stocker les lettres de la premiere chaine puis les comparer une a une
 const getCommonLetter = (str1, str2, str3) => {
     for (let i = 0; i < str1.length; i++) {
         for (let j = 0; j < str2.length; j++) {

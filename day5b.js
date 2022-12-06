@@ -4,15 +4,11 @@ const input2 = require("fs")
     .readFileSync(0, { encoding: "utf-8" })
     .split("\n")
     .map((x) => {
-        // console.log(x);
         return x.match(/\b(\w+)\b/g)
     })
     .map((x) => {
-        // console.log(`move ${x[1]} letter : ${x[3]} => ${x[5]}`)
         return [parseInt(x[1]), parseInt(x[3]) - 1, parseInt(x[5]) - 1]
     })
-
-// const cargo = [['Z', 'N'], ['M', 'C', 'D'], ['P']]
 
 const cargo = [
 "DTRBJLWG",

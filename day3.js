@@ -30,4 +30,3 @@ const solve = (input) => {
 }
 
 console.log(solve(input))
-// console.error(y)

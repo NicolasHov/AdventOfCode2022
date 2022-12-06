@@ -14,4 +14,3 @@ const solve = (input) =>
     input.map(tab => scores[tab[0]][tab[1]]).reduce((a, b) => a + b, 0);
 
 console.log(solve(input));
-// console.error(y)
