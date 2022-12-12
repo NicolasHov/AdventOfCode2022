@@ -1,1 +1,8 @@
 day3.c 
+node_modules
+*.json
+*.yaml
+*.vscode
+*.txt
+day7.*
+day7bis.*

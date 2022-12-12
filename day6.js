@@ -1,5 +1,3 @@
-const { log } = require("console")
-
 // Parsing
 const input = require("fs")
     .readFileSync(0, { encoding: "utf-8" })

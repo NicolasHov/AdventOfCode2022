@@ -3,11 +3,9 @@ const input2 = require("fs")
     .readFileSync(0, { encoding: "utf-8" })
     .split("\n")
     .map((x) => {
-        // console.log(x);
         return x.match(/\b(\w+)\b/g)
     })
     .map((x) => {
-        // console.log(`move ${x[1]} letter : ${x[3]} => ${x[5]}`)
         return [parseInt(x[1]), parseInt(x[3]) - 1, parseInt(x[5]) - 1]
     })
 
@@ -35,7 +33,6 @@ const cargo = [
 
 // solving
 const solve = (cargo, moves) => {
-    // console.log(moves);
     for (let i = 0; i < moves.length; i++) {
         let [N, start, end] = moves[i]
         for (let j = 0; j < N; j++) {
